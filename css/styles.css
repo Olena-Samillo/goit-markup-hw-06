@@ -520,12 +520,8 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-
-.footer-address-content {
-  margin-right: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-list {
@@ -607,10 +603,6 @@ address {
 .footer-social-link:focus,
 .footer-social-link:hover {
   background-color: var(--background-icon);
-}
-
-.footer-social-content {
-  margin-right: 93px;
 }
 
 .footer-input {
@@ -706,6 +698,9 @@ address {
 
 .close-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -719,6 +714,16 @@ address {
 .close-btn-icon {
   width: 11px;
   height: 11px;
+
+  transition-property: var(--background-icon);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.close-btn-icon:hover,
+.close-btn-icon:focus {
+  fill: #188ce8;
 }
 
 /* ========================== MODAL FORM ========================================== */
